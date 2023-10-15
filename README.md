@@ -17,3 +17,44 @@
 ### Wireframe
 
 [![Wireframe](meta/images/wireframe_thumb.png)](meta/images/wireframe.png)
+
+## インストール
+
+```sh
+git clone https://github.com/allusernamestakenexceptthis/jpopulation
+cd jpopulation
+npm install
+npm run dev
+```
+
+## コマンド
+
+### Lint
+
+Eslintでコードの構文チェックする
+
+```sh
+npm run lint
+```
+
+Eslintでコードの構文チェックして直す
+
+```sh
+npm run lint:fix
+```
+
+### Format
+
+Prettierでコードの整形をきれいにする
+
+```sh
+npm run format
+```
+
+### Fix
+
+Prettierでコードの整形をきれいにして、Eslintでコードの構文チェックして直します
+
+```sh
+npm run fix
+```
