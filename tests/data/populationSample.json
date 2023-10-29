@@ -1,0 +1,21 @@
+{
+  "message": null,
+  "result": {
+    "boundaryYear": 2020,
+    "data": [
+      {
+        "label": "総人口",
+        "data": [
+          {
+            "year": 1980,
+            "value": 12817
+          },
+          {
+            "year": 1985,
+            "value": 12707
+          }
+        ]
+      }
+    ]
+  }
+}
