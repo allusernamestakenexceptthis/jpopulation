@@ -44,7 +44,6 @@ const getColor = (code: string) => {
 
     legendColors.value[code] = color
   }
-  console.log(legendColors.value)
 
   return legendColors.value[code]
 }
