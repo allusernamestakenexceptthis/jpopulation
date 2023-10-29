@@ -7,8 +7,6 @@ import type { populationTypePerYearResults, prefecturesResults } from '@/types/r
 import * as prefecturesSample from '../../data/prefecturesSample.json'
 import * as populationSample from '../../data/populationSample.json'
 
-//import mockedAxios from '../../mocks/axios.ts'
-
 vi.mock('axios')
 
 describe('Population Store', () => {
