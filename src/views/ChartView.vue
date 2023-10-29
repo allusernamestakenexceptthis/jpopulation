@@ -14,8 +14,6 @@ usePopulationStore()
   .catch((res: string) => {
     error.value = res
   })
-
-console.log(prefectures)
 </script>
 <template>
   <div class="error" v-if="error">
