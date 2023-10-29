@@ -25,3 +25,8 @@ export type populationTypePerYearResults = {
     data: populationPerYear[]
   }
 }
+
+export type populationPerYearPerPrefecture = {
+  prefName: string
+  prefData: populationPerYear[]
+}

@@ -5,7 +5,7 @@ import { usePopulationService } from '@/services/population'
 
 export const usePopulationStore = defineStore('population', () => {
   const prefectures = ref<prefecture[]>([])
-  const populationsPerYear = ref<populationPerYear[]>([])
+  const populationsPerYear = ref<{ [key: string]: populationPerYear[] }>({})
 
   const isPrefecturesLoaded = ref<boolean>(false)
   const isPopulationPerYearLoaded = ref<boolean[]>([])
@@ -32,10 +32,10 @@ export const usePopulationStore = defineStore('population', () => {
       if (typeof res === 'string') {
         return Promise.reject(res)
       } else {
-        populationsPerYear.value = res
+        populationsPerYear.value[prefCode] = res
       }
     }
-    return populationsPerYear.value
+    return populationsPerYear.value[prefCode]
   }
 
   return { fetchPrefectures, prefectures, fetchPopulationPerYear, populationsPerYear }
