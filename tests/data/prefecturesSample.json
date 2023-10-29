@@ -1,0 +1,13 @@
+{
+  "message": null,
+  "result": [
+    {
+      "prefCode": 1,
+      "prefName": "北海道"
+    },
+    {
+      "prefCode": 2,
+      "prefName": "Another"
+    }
+  ]
+}
